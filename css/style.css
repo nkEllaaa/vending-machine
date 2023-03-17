@@ -1,0 +1,239 @@
+body {
+  background: #EAE8FE;
+}
+header {
+  display: block;
+  background: url(../images/logo.png); 
+  width: 436px;
+  height: 204px;
+  margin: 0 auto;
+}
+/* 페이지 레이아웃 */
+
+.contents {
+  display: grid;
+  grid-template-areas: 
+  "a b"
+  "a c";
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.page1,
+.page2,
+.page3 {
+  background-color: #fff;
+}
+
+/* page1 */
+
+.page1 {
+  grid-area: a;
+  width: 360px;
+  height: 545px;
+  background-color: #fff;
+}
+.page1-coke-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 31px;
+  margin-bottom: 26px;
+  gap: 12px;
+}
+.page1 article{
+  width: 94px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px #BDBDBD;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.page1 article img{
+  width: 36px;
+  height: 65px;
+}
+.page1 article p{
+  margin: 7px auto;
+  font-size: 9px;
+}
+.page1 article .price{
+  width: 70px;
+  height: 22px;
+  background-color: #6327FE;
+  box-shadow: none;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  line-height: 22px;
+}
+.page1 .not-article-wrap{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 11px;
+}
+.page1 .exchange{
+  width: 200px;
+  height: 33px;
+  background-color: #EAE8FE;
+  border-radius: 5px;
+  display: flex;
+  font-size: 14px;
+}
+.page1 .exchange p:first-child {
+  margin: auto auto auto 10px;
+}
+.page1 .exchange p:nth-child(2) {
+  margin: auto 7px auto auto;
+}
+.page1 .input-box{
+  width: 200px;
+  height: 33px;
+  box-sizing: border-box;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  padding: 6px auto 6px 8px;
+  box-sizing: border-box;
+}
+.page1 .input-box::placeholder{
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 8px;
+  color: #BDBDBD;
+}
+.page1 .exch-btn,
+.page1 .in-btn{
+  font-size: 13px;
+  font-weight: 500;
+  width: 94px;
+  height: 32px;
+  box-shadow: 0 0 5px #BDBDBD;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.page1 .page1-coke1, 
+.page1 .page1-coke5{
+  border: 3px solid #6327FE;
+  border-radius: 10px;
+}
+.page1 .not-article-wrap:nth-child(3) {
+  overflow: hidden;
+}
+.page1 .select{
+  width: 200px;
+  height: 134px;
+  background-color: #EAE8FE;
+}
+/* page2 */
+
+.page2 {
+  grid-area: b;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+.page2 .page2-inner{
+  width: 306px;
+  height: 32px;
+  padding: 0 5px;
+  background-color: #EAE8FE;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}  
+.page2 .page2-inner p {
+  font-weight: bold;
+}
+.page3 {
+  grid-area: c;
+  width: 360px;
+  height: 463px;
+}
+.page3 p {
+  display: flex;
+  flex-direction: column;
+}
+.page3 .get {
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+}
+.page3 .total-price {
+  font-size: 12px;
+  font-weight: 500;
+  align-items: flex-end;
+  margin-right: 25px;
+}
+.page3 .page3-inner {
+  width: 306px;
+  height: 364px;
+  background-color: #EAE8FE;
+  margin: auto;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+}
+.page3 .page3-inner .bar{
+  width: 4px;
+  height: 79px;
+  background-color: #fff;
+  float: right;
+  margin: 9px 4px 0 0;
+}.page3 .page3-inner .page3-inner-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page3 .page3-inner article {
+  width: 276px;
+  height: 46px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 5px;
+}
+.page3 .page3-inner article:not(:first-child){
+  margin: 0 18px 6px 18px;
+}
+.page3 article:first-child{
+  margin: 12px 18px 6px 18px;
+}
+.page3 .page3-inner p {
+  display: inline;
+}
+.page3 .page3-inner article img {
+  width: 18px;
+  height: 33px;
+  display: block;
+  margin: 6px 10px 7px 10px;
+}
+.page3 .page3-inner article p{
+  display: block;
+  margin: auto 0;
+  font-size: 9px;
+  font-weight: 500;
+}
+.page3 .page3-inner .num{
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #BDBDBD;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 8px 8px auto;
+}
+
