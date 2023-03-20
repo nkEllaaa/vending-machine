@@ -13,7 +13,6 @@ header {
   height: 204px;
   margin: 0 auto;
 }
-/* 페이지 레이아웃 */
 
 .contents {
   display: grid;
@@ -28,6 +27,7 @@ header {
 .page2,
 .page3 {
   background-color: #fff;
+  margin: 0 auto;
 }
 
 /* page1 */
@@ -38,7 +38,8 @@ header {
   height: 545px;
   background-color: #fff;
 }
-.page1-coke-wrap{
+/*page1 article 부분입니다*/
+.page1-article-wrap{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -104,13 +105,15 @@ header {
   left: 0;
   border-radius: 10px;
 }
-.page1 .not-article-wrap{
+
+/* page1 not-article-wrap 부분입니다 */
+.page1 .not-article-wrap {
   display: flex;
   justify-content: center;
   gap: 12px;
   margin-bottom: 11px;
 }
-.page1 .exchange{
+.page1 .exchange {
   width: 200px;
   height: 33px;
   background-color: #EAE8FE;
@@ -124,7 +127,7 @@ header {
 .page1 .exchange p:nth-child(2) {
   margin: auto 7px auto auto;
 }
-.page1 .input-box{
+.page1 .input-box {
   width: 200px;
   height: 33px;
   box-sizing: border-box;
@@ -133,14 +136,14 @@ header {
   padding: 6px auto 6px 8px;
   box-sizing: border-box;
 }
-.page1 .input-box::placeholder{
+.page1 .input-box::placeholder {
   font-size: 13px;
   font-weight: 500;
   padding: 6px 8px;
   color: #BDBDBD;
 }
 .page1 .exch-btn,
-.page1 .deposit-btn{
+.page1 .deposit-btn {
   font-size: 13px;
   font-weight: 500;
   width: 94px;
@@ -149,9 +152,8 @@ header {
   background-color: white;
   border: none;
   border-radius: 5px;
-  padding: 0;
 }
-.page1 .get-btn{
+.page1 .get-btn {
   width: 94px;
   height: 106px;
   border-radius: 5px;
@@ -162,14 +164,11 @@ header {
   font-size: 13px;
 }
 .page1 .page1-coke1, 
-.page1 .page1-coke5{
+.page1 .page1-coke5 {
   border: 3px solid #6327FE;
   border-radius: 10px;
 }
-.page1 .not-article-wrap:nth-child(3) {
-  overflow: hidden;
-}
-.page1 .select{
+.page1 .select {
   width: 200px;
   height: 107px;
   background-color: #EAE8FE;
@@ -314,4 +313,19 @@ header {
   justify-content: center;
   align-items: center;
   margin: 8px 8px 8px auto;
+}
+@media (max-width: 360px) {
+  .contents{
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+    gap: 0;
+    justify-content: center;
+  }
+  header {
+    width: 166px;
+    height: 71px;
+    background: url(../images/logo.png) no-repeat 0 0 / cover;
+  }
 }
