@@ -1,3 +1,8 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* { 
+  font-family: 'Noto Sans KR', sans-serif;
+}
 body {
   background: #EAE8FE;
 }
@@ -72,6 +77,33 @@ header {
   font-size: 12px;
   line-height: 22px;
 }
+.page1 .page1-coke2{
+  position: relative;
+}
+.page1 .page1-coke2 .sold-out{
+  position: absolute;
+  width: 45px;
+  height: 21px;
+  color: #EAE8FE;
+  font-weight: 900;
+  font-size: 14px;
+  border: 4px double #EAE8FE;
+  z-index: 1;
+  text-align: center;
+  line-height: 21px;
+  transform: rotate(-17.97deg);
+}
+.page1 .page1-coke2::after{
+  content:"";
+  width: 94px;
+  height: 130px;
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
 .page1 .not-article-wrap{
   display: flex;
   justify-content: center;
@@ -108,7 +140,7 @@ header {
   color: #BDBDBD;
 }
 .page1 .exch-btn,
-.page1 .in-btn{
+.page1 .deposit-btn{
   font-size: 13px;
   font-weight: 500;
   width: 94px;
@@ -117,6 +149,17 @@ header {
   background-color: white;
   border: none;
   border-radius: 5px;
+  padding: 0;
+}
+.page1 .get-btn{
+  width: 94px;
+  height: 106px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px #BDBDBD;
+  background-color: #6327FE;
+  color: white;
+  font-size: 13px;
 }
 .page1 .page1-coke1, 
 .page1 .page1-coke5{
@@ -128,9 +171,45 @@ header {
 }
 .page1 .select{
   width: 200px;
-  height: 134px;
+  height: 107px;
   background-color: #EAE8FE;
+  overflow: hidden;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
 }
+.page1 .not-article-wrap .select article {
+  width: 170px;
+  height: 46px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+} 
+.not-article-wrap .origin {
+  margin: 12px 18px 6px 12px;
+  box-shadow: none;
+}
+.not-article-wrap .green {
+  margin: 6px 18px 6px 12px;
+  box-shadow: none;
+}
+.page1 .not-article-wrap .select img {
+  width: 18px;
+  height: 33px;
+  margin: 6px 10px 7px 10px;
+}
+.page1 .not-article-wrap .num{
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #BDBDBD;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 8px 8px auto;
+}
+
 /* page2 */
 
 .page2 {
@@ -185,7 +264,7 @@ header {
   border: 1px solid #BDBDBD;
   border-radius: 5px;
 }
-.page3 .page3-inner .bar{
+.bar{
   width: 4px;
   height: 79px;
   background-color: #fff;
@@ -236,4 +315,3 @@ header {
   align-items: center;
   margin: 8px 8px 8px auto;
 }
-
