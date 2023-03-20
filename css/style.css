@@ -59,6 +59,10 @@ header {
   border-radius: 10px;
   box-sizing: border-box;
 }
+.page1 .page1-article-wrap article:not(:nth-child(2)):hover {
+  border: 3px solid #6327FE;
+  border-radius: 10px;
+}
 .page1 article img{
   width: 36px;
   height: 65px;
@@ -78,8 +82,9 @@ header {
   font-size: 12px;
   line-height: 22px;
 }
-.page1 .page1-coke2{
+.page1 .page1-coke2:disabled{
   position: relative;
+  box-sizing: border-box;
 }
 .page1 .page1-coke2 .sold-out{
   position: absolute;
@@ -94,19 +99,15 @@ header {
   line-height: 21px;
   transform: rotate(-17.97deg);
 }
-.page1 .page1-coke2::after{
+.page1 .page1-coke2::before{
   content:"";
   width: 94px;
   height: 130px;
   background-color: black;
   opacity: 0.8;
   position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 10px;
 }
-
-/* page1 not-article-wrap 부분입니다 */
 .page1 .not-article-wrap {
   display: flex;
   justify-content: center;
@@ -163,11 +164,7 @@ header {
   color: white;
   font-size: 13px;
 }
-.page1 .page1-coke1, 
-.page1 .page1-coke5 {
-  border: 3px solid #6327FE;
-  border-radius: 10px;
-}
+
 .page1 .select {
   width: 200px;
   height: 107px;
@@ -175,7 +172,14 @@ header {
   overflow: hidden;
   border: 1px solid #BDBDBD;
   border-radius: 5px;
+  overflow-y: auto;
 }
+.page1 .select::-webkit-scrollbar{
+  width: 4px;
+}
+.page1 .select::-webkit-scrollbar-thumb{
+  background-color: white;
+} 
 .page1 .not-article-wrap .select article {
   width: 170px;
   height: 46px;
@@ -262,14 +266,15 @@ header {
   margin: auto;
   border: 1px solid #BDBDBD;
   border-radius: 5px;
+  overflow: auto;
 }
-.bar{
+.page3 .page3-inner::-webkit-scrollbar{
   width: 4px;
-  height: 79px;
-  background-color: #fff;
-  float: right;
-  margin: 9px 4px 0 0;
-}.page3 .page3-inner .page3-inner-list {
+}
+.page3 .page3-inner::-webkit-scrollbar-thumb{
+  background-color: white;
+} 
+.page3 .page3-inner .page3-inner-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
